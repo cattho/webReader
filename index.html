@@ -5,29 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Web reader</title>
 </head>
 
 <body>
-    <main>
-        <p class="title">Web Reader</p>
+    <div class="bg-white flex justify-center items-center h-screen flex-col">
+        <!-- <button id="">dark Mode</button> -->
+        <h1 class="font-bold text-blue-300 mb-4 text-6xl">Web Reader</h1>
+        <img src="./assest/juicy-sitting-girl-with-pencil-and-book.png" alt="">
         <div class="text-section">
             <p class="text-title">Enter Text</p>
-            <textarea name="" id="text" cols="30" rows="10"></textarea>
+            <textarea name="message" id="text" cols="30" rows="10" class="border-solid border-2 border-sky-500 rounded-md resize-none w-80 h-80"></textarea>
         </div>
         <div class="voice-section">
             <p class="voice-title">Select Voice</p>
-            <select name="" id="voice">
+            <select class="border-hidden-none"  id="voice">
                 <option value="Google Us English">Google Us English</option>
             </select>
         </div>
         <div class="button-container">
-            <button class="submit" id="btnSubmit">Read</button>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg mt-4" id="btnSubmit">Read</button> 
         </div>
-    </main>
+    </div>
 
-    <script src="/index.js"></script>
+    <script src="./index.js"></script>
+    <script src="./tailwind.config.js"></script> 
 </body>
 
 </html>
