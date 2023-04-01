@@ -10,25 +10,29 @@
 </head>
 
 <body>
-    <button class="rounded-full bg-blue-500 text-white absolute ml-5 mt-6" id="toggleTheme" onclick="toggleTheme()">Theme</button>
-    <div id="containerApp" class="bg-white flex justify-center items-center h-screen flex-col font-sans transition duration-300">
+    <button class="rounded-full bg-blue-500 text-white absolute ml-5 mt-6" id="toggleTheme"
+        onclick="toggleTheme()">Theme</button>
+    <div id="containerApp"
+        class="bg-white flex justify-center items-center h-screen flex-col font-sans transition duration-300">
         <h1 class="font-bold text-blue-300 mb-4 text-6xl">Web Reader</h1>
         <img src="./assest/juicy-sitting-girl-reading-a-book.png" alt="">
         <div class="container flex flex-col justify-center items-center">
             <p class="font-semibold text-2xl my-2 text-orange-400">Enter your text</p>
             <textarea name="message" id="text" cols="30" rows="10"
-                class="bg-gray-100 border-none rounded-md resize-none w-3/6 h-80 outline-none px-2 py-1 "></textarea>
-                <p class="font-semibold text-md my-2 mx-0 text-orange-400">Select Voice</p>
+                class="bg-gray-100 border-none rounded-md resize-none w-4/6 h-80 outline-none px-2 py-1 sm:w-3/6 md:w-3/6 "></textarea>
+            <p class="font-semibold text-md my-2 mx-0 text-orange-400">Select Voice</p>
             <select class="w-2/6 border border-gray-300 rounded" id="voice">
-                <option class="w-2/6 border border-gray-300 rounded" value="Google Us English">Google Us English</option>
+                <option class="w-2/6 border border-gray-300 rounded" value="Google Us English">Google Us English
+                </option>
             </select>
         </div>
         <div class="voice-section">
-            
+
         </div>
-       
-            <button class="bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg mt-4 transition duration-300"
-                id="btnSubmit">Read</button>
+
+        <button
+            class="bg-blue-400 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg mt-4 transition duration-300"
+            id="btnSubmit">Read</button>
     </div>
 
     <script src="./index.js"></script>
